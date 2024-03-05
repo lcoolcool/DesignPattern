@@ -7,7 +7,7 @@
 1) 增加对应子类
 2) 修改工厂类
 
-### example:
+## Example Code:
 1) 简单计算器举例
     * ~~非面向对象实现~~：[CalculateBad](CalculateBad.java)
     * [CalculateExample](CalculateExample)

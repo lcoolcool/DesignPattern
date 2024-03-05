@@ -6,12 +6,12 @@
 ## 具体操作：
 1) 策略类(抽象算法类)，定义所有支持的算法公共接口
 2) 具体策略类，封装具体的算法或行为，继承于策略类(抽象算法类)
-3) 
+3) 用一个具体的Content上下文配置，来维护一个对策略类对象的引用
 
-### example:
-1) 简单计算器举例
-    * 非面向对象实现：CalculateBad
-    * CalculateExample
-2) 商品打折举例
+## Example Code:
+1) 策略模式简单举例
+    * [StrategyExample](StrategyExample)
+2) 商品打折策略实现
     * 非面向对象实现：DiscountDad
     * Strategy.DiscountExample
+3) 策略与简单工厂结合
