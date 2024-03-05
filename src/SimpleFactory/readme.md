@@ -9,8 +9,8 @@
 
 ### example:
 1) 简单计算器举例
-    * 非面向对象实现：CalculateBad
-    * CalculateExample
+    * ~~非面向对象实现~~：[CalculateBad]()
+    * [CalculateExample]()
 2) 商品打折举例
-    * 非面向对象实现：DiscountDad
-    * DiscountExample
+    * ~~非面向对象实现~~：[DiscountDad]()
+    * [DiscountExample]()
