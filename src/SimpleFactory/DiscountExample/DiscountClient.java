@@ -2,7 +2,7 @@ package SimpleFactory.DiscountExample;
 
 import java.util.Scanner;
 
-public class DiscountObject {
+public class DiscountClient {
     public static void main(String[] args){
         int num;
         double price;

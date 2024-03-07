@@ -2,7 +2,7 @@ package SimpleFactory.CalculateExample;
 
 import java.util.Scanner;
 
-public class CalculateObject {
+public class CalculateClient {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入数字A: ");
