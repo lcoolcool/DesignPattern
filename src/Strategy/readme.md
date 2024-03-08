@@ -12,6 +12,6 @@
 1) 策略模式简单举例
     * [StrategyExample](StrategyExample)
 2) 商品打折策略实现
-    * 非面向对象实现：DiscountDad
-    * Strategy.DiscountExample
+    * [DiscountStrategy](DiscountStrategy)
 3) 策略与简单工厂结合
+   * [DiscountStrategyPlus](DiscountStrategyPlus)
