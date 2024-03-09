@@ -11,7 +11,7 @@ public class DiscountClient {
         String[] discountParam;
         Scanner sc = new Scanner(System.in);
         do{
-            System.out.println("请输入折扣类型：1。原价， 2.打折， 3.满减");
+            System.out.println("请输入折扣类型：1.原价， 2.打折， 3.满减");
             int discountType = Integer.parseInt(sc.nextLine());
             if (discountType == 2) {
                 System.out.println("请输入折扣率：（eg: 0.8）;");
