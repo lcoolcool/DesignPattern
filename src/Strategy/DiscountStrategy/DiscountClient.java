@@ -1,8 +1,5 @@
 package Strategy.DiscountStrategy;
 
-import SimpleFactory.DiscountExample.Discount;
-import SimpleFactory.DiscountExample.DiscountFactory;
-
 import java.util.Scanner;
 
 public class DiscountClient {
@@ -56,7 +53,8 @@ public class DiscountClient {
     private static DiscountStrategyContext getDiscountStrategyContext(String[] discountParam) {
         return switch (discountParam[0]){
             case "2" -> new DiscountStrategyContext(new MulStrategy(Double.parseDouble(discountParam[1])));
-            case "3" -> new DiscountStrategyContext(new SubStrategy(Integer.parseInt(discountParam[1]), Integer.parseInt(discountParam[2])));
+            case "3" -> new DiscountStrategyContext(new SubStrategy(Integer.parseInt(discountParam[1]),
+                    Integer.parseInt(discountParam[2])));
             default -> new DiscountStrategyContext(new NormalStrategy());
         };
     }
