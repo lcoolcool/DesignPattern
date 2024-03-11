@@ -1,8 +1,8 @@
-package SimpleFactory.DiscountExample;
+package Strategy.DiscountStrategyPlus;
 
 import java.util.Scanner;
 
-public class DiscountClient {
+public class DiscountPlusClient {
     public static void main(String[] args){
         int num;
         double price;
@@ -37,15 +37,13 @@ public class DiscountClient {
             System.out.println();
 
             if (price>0 && num>0){
-                Discount discountObj = DiscountFactory.createDiscount(discountParam);
-                totalPrice = discountObj.acceptDiscount(num, price);
+                totalPrice = new DiscountStrategyPlusContext(discountParam).contextInterface(num, price);
                 total += totalPrice;
                 System.out.println();
                 System.out.println("单价：" + price + "元 数量：" + num + " 合计：" + totalPrice + "元");
                 System.out.println();
                 System.out.println("总计：" + total + " 元");
             }
-
         }
         while (num>0 && price>0);
     }

@@ -15,3 +15,6 @@
     * [DiscountStrategy](DiscountStrategy)
 3) 策略与简单工厂结合
    * [DiscountStrategyPlus](DiscountStrategyPlus)
+   * 通过与 [SimpleFactory.DiscountExample.DiscountClient](../SimpleFactory/DiscountExample/DiscountClient.java) 比较我们
+   可以发现，简单工厂模式需要客户端去认识两个类(工厂类和实现对象类)，而策略模式与工厂模式结合的用法，客户端就只需要认识一个Context类就可以了，
+   耦合更加降低。

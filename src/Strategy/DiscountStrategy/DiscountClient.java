@@ -39,7 +39,7 @@ public class DiscountClient {
             if (price>0 && num>0){
                 DiscountStrategyContext discountStrategyContext = getDiscountStrategyContext(discountParam);
                 totalPrice = discountStrategyContext.contextInterface(num, price);
-                total += discountStrategyContext.contextInterface(num, price);
+                total += totalPrice;
                 System.out.println();
                 System.out.println("单价：" + price + "元 数量：" + num + " 合计：" + totalPrice + "元");
                 System.out.println();
@@ -47,7 +47,6 @@ public class DiscountClient {
             }
         }
         while (num>0 && price>0);
-
     }
 
     private static DiscountStrategyContext getDiscountStrategyContext(String[] discountParam) {
