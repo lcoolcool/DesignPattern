@@ -1,6 +1,7 @@
 package Test;
 
-public class Test {
+public class
+Test {
     int testAge;
     public Test(String name){
         System.out.println("my name is: " + name);
